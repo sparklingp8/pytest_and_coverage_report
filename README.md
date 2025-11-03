@@ -57,10 +57,11 @@ Create a `.coveragerc` file to omit test files:
 [run]
 omit =
     test_*.py
+    */tests/*
 
 [report]
 exclude_lines =
-    if __name__ == .__main__:
+    if __name__ == .__main__.:
 ```
 
 Then run:
